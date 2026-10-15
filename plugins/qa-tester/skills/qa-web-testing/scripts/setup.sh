@@ -5,7 +5,8 @@ set -euo pipefail
 TOOLS="${1:-$HOME/.qa-tester-tools}"
 mkdir -p "$TOOLS"
 cd "$TOOLS"
-[ -f package.json ] || npm init -y >/dev/null
+# npm init rejects folder names starting with "." - write package.json directly.
+[ -f package.json ] || echo '{ "name": "qa-tester-tools", "private": true }' > package.json
 npm i playwright ffmpeg-static >/dev/null
 # Playwright's own ffmpeg build is needed for CDP screencasts in some versions.
 npx playwright install ffmpeg >/dev/null

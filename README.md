@@ -35,8 +35,11 @@ In Claude Code:
 One-time tool setup for HD capture (Node 18+, Microsoft Edge, Python 3 + Pillow):
 
 ```
-bash ~/.claude/plugins/marketplaces/cladue-ai/plugins/qa-tester/skills/qa-web-testing/scripts/setup.sh
+bash "$(find ~/.claude/plugins -path '*qa-tester*' -name setup.sh | head -1)"
 ```
+
+(The plugin lives under `~/.claude/plugins/cache/` or `~/.claude/plugins/marketplaces/` depending on
+how the marketplace was added; the command above finds it either way.)
 
 #### Use
 

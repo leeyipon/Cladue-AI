@@ -1,7 +1,7 @@
 {
   "name": "qa-tester",
   "description": "QA tester agent: runs a full web-app QA job from a brief (Notion or pasted) to a filled Google Sheet with HD screenshot/MP4 evidence linked from Google Drive.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "leeyipon"
   },

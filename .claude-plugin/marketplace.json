@@ -25,7 +25,7 @@
       "name": "qa-tester",
       "source": "./plugins/qa-tester",
       "description": "QA tester agent: full web-app QA run from a brief to a filled Google Sheet with HD evidence linked from Drive",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "leeyipon"
       },
