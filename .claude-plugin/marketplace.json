@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Personal skill/plugin marketplace",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "plugins": [
     {
@@ -20,6 +20,17 @@
       "keywords": ["starter"],
       "category": "development",
       "strict": false
+    },
+    {
+      "name": "qa-tester",
+      "source": "./plugins/qa-tester",
+      "description": "QA tester agent: full web-app QA run from a brief to a filled Google Sheet with HD evidence linked from Drive",
+      "version": "1.0.0",
+      "author": {
+        "name": "leeyipon"
+      },
+      "keywords": ["qa", "testing", "ekyc", "playwright", "google-sheets"],
+      "category": "testing"
     }
   ]
 }

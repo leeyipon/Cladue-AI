@@ -1,0 +1,21 @@
+{
+  "tabs": [
+    {
+      "name": "Website",
+      "header": ["Website Module", "Functionalities", "Test Status", "Remark Issued", "Test Attachment jpg/mp4", "Extra evidence"],
+      "rows": [
+        ["Landing Page", "Landing page display", "Passed", "Start button opens step 1.", "", ""],
+        ["Profile", "First / Last Name input", "Failed", "WEB-001: name '12345!@#' accepted and Next enabled.", "WEB-001_Name_Accepts_Symbols.png", "WEB-001_Name_Accepts_Symbols.mp4"],
+        ["Face Verification", "Live camera liveness", "Blocked", "Camera not available in test browser - not testable.", "", ""]
+      ]
+    },
+    {
+      "name": "Back-Office",
+      "header": ["Back-Office Module", "Functionalities", "Test Status", "Remark Issued", "Test Attachment jpg/mp4", "Extra evidence"],
+      "rows": [
+        ["Application Detail", "Status update after Approve", "Failed", "BO-001 (Critical): popup says Approved but status stays Pending after reload.", "BO-001b_After_Reload_Status.png", "BO-001_Approve_Status.mp4"],
+        ["", "Manual Review action", "To-Do", "Not tested.", "", ""]
+      ]
+    }
+  ]
+}
